@@ -1,0 +1,8 @@
+#headercon {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  gap: 2rem;
+}
