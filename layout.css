@@ -1,8 +1,23 @@
 #headercon {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 ul {
   display: flex;
-  gap: 2rem;
+
+  gap: 1rem;
+  list-style: none;
+}
+
+.catgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem;
+}
+
+.prodgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }

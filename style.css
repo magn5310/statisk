@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+body {
+  max-width: 1200px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-inline: 1rem;
+}
+
+.catcard {
+  max-width: 100%;
+  height: auto;
+  margin-block: 1.5rem;
+  margin-inline: 0.2rem;
+  border-radius: 1rem;
+  background-color: lightgray;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin-block: 1rem;
+}
+.prodcard {
+  background-color: lightgray;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+article :last-child {
+  margin-bottom: auto;
+}
+
+.tilbud,
+span {
+  display: none;
+}
+
+.salg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vis {
+  display: inline;
+}
+
+.udsolgt img {
+  opacity: 0.2;
+}
+
+.udsolgt::before {
+  content: "UDSOLGT";
+  background-color: black;
+  color: white;
+  padding: 0.2rem;
+  position: absolute;
+}
+.produktmain > * {
+  margin: 3rem 1rem;
+}
+
+.inspectcard {
+  background-color: lightgray;
+  padding: 1rem;
+}
