@@ -14,21 +14,41 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-inline: 1rem;
 }
+header * {
+  color: crimson;
+}
+header a {
+  font-size: 0.8rem;
+}
 
 .catcard {
   max-width: 100%;
   height: auto;
-  margin-block: 1.5rem;
+  margin-block: 1rem;
   margin-inline: 0.2rem;
   border-radius: 1rem;
   background-color: lightgray;
-  padding: 1rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
+  color: crimson;
 }
-
+a:hover {
+  color: rgb(255, 119, 0);
+  transition: 0.3s;
+}
+select {
+  background-color: white;
+  border: none;
+  margin-left: 1rem;
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  font-weight: bold;
+}
 h1 {
   margin-block: 1rem;
 }
@@ -72,8 +92,100 @@ span {
 .produktmain > * {
   margin: 3rem 1rem;
 }
+.logo h1 {
+  font-size: 3rem;
+}
 
 .inspectcard {
   background-color: lightgray;
   padding: 1rem;
+}
+.inspectcard a {
+  color: black;
+}
+.inspectcard > * {
+  margin-bottom: 2rem;
+}
+.addbutton {
+  text-align: center;
+  background-color: white;
+  padding: 0.2rem 2rem;
+  border-radius: 0.4rem;
+}
+dl {
+  margin-top: 1rem;
+}
+dt {
+  font-weight: bold;
+  margin-block: 0.3rem;
+}
+dd {
+  margin-left: 0.3rem;
+}
+.catchphrase h2 {
+  color: crimson;
+}
+.tilbud {
+  background-color: yellow;
+}
+@media (min-width: 600px) {
+  .inspectcard {
+    height: 50%;
+  }
+  .inspectcard > * {
+    margin-bottom: 4rem;
+  }
+  .inspectcard h2 {
+    font-size: 3rem;
+  }
+  .inspectcard p {
+    font-size: 1.5rem;
+  }
+  .inspectcard form {
+    font-size: 1.5rem;
+  }
+  .addbutton {
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: white;
+    padding: 0.2rem 2rem;
+    border-radius: 0.4rem;
+  }
+  .inspectcard a {
+    color: black;
+  }
+  .prodinfo {
+    background-color: lightgray;
+    width: 50%;
+  }
+  .prodcard {
+    width: 85%;
+    height: 100%;
+    padding-bottom: 0;
+  }
+  .prodcard h3 {
+    font-size: 1.8rem;
+  }
+  .prodcard p {
+    font-size: 1.2rem;
+  }
+  .prodcard a {
+    font-size: 1.2rem;
+  }
+
+  .catcard {
+    margin-right: 3rem;
+  }
+  .logo h1 {
+    font-size: 5rem;
+  }
+  header a {
+    font-size: 1.4rem;
+  }
+  .catchphrase h2 {
+    font-size: 3rem;
+  }
+  .catchphrase p {
+    font-size: 1.5rem;
+  }
 }
