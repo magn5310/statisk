@@ -23,10 +23,11 @@
       <h1>Eksempel på Produktside</h1>
 
       <div class="produktgrid">
-        <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="Sahara Team India Fanwear Round Neck Jersey" />
+        <img class="prodimg" src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="Sahara Team India Fanwear Round Neck Jersey" />
         <div class="inspectcard">
           <h2>Bukser</h2>
-          <p>Det er bukser</p>
+          <h3><span class="prodpris"></span>kr.</h3>
+          <p><span class="prodbrand"> Nike </span> | <span class="prodstyle"> T-shirt </span></p>
           <form action="">
             <label for="str"
               >Vælg størrelse
@@ -47,11 +48,11 @@
         <h2>Produkt info</h2>
         <dl>
           <dt>Model navn</dt>
-          <dd>Buks</dd>
+          <dd class="prodtype">Buks</dd>
           <dt>Farve</dt>
-          <dd>Grå</dd>
-          <dt>Materiale</dt>
-          <dd>Polyester</dd>
+          <dd class="prodcolor">Grå</dd>
+          <dt>Stil</dt>
+          <dd class="produse">Polyester</dd>
         </dl>
       </section>
       <section class="catchphrase">
@@ -60,5 +61,6 @@
       </section>
     </main>
     <footer></footer>
+    <script src="produkt.js"></script>
   </body>
 </html>

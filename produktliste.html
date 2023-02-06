@@ -19,58 +19,27 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <section class="prodheader">
       <h1>Eksempel på Produktliste</h1>
       <p>Velkommen til dette, overhovedt ikke færdige på nogen måde, statiske (indtil videre) site, NU MED PRODUKTER!</p>
-      <div class="prodgrid">
+    </section>
+    <main class="prodgrid">
+      <template id="prodcardtemplate">
         <article class="prodcard">
           <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="Jogging Bukser i Polyester" />
           <h3>Jogging bukser i Polyester</h3>
-          <p class="beskriv">Bukser | M&M</p>
-          <p class="pris"><span>FØR</span> DKK 400,-</p>
-          <div class="tilbud">
-            <p>NU DKK 240,-</p>
-            <p>-40%</p>
+          <p class="beskriv"><span class="prodbrand"> Bukser </span> | <span class="prodstyle"> M&M </span></p>
+          <p><span class="pris">FØR</span> DKK <span class="realpris"> 400</span>,-</p>
+          <div class="salg">
+            <p>NU DKK <span class="nupris">240</span>,-</p>
+            <p>-<span class="proddiscount"> 40</span>%</p>
           </div>
-          <div class="readmore">
-            <a href="produkt.html">Læs mere</a>
-          </div>
-        </article>
-        <article class="prodcard">
-          <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="Jogging Bukser i Polyester" />
-          <h3>Jogging Bukser i Polyester</h3>
-          <p class="beskriv">Bukser | M&M</p>
-          <p><span class="vis">FØR</span> DKK 400,-</p>
-          <div class="tilbud salg">
-            <p>NU DKK 240,-</p>
-            <p>-40%</p>
-          </div>
+
           <a href="produkt.html">Læs mere</a>
         </article>
-        <article class="prodcard udsolgt">
-          <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="Jogging Bukser i Polyester" />
-          <h3>Jogging Bukser i Polyester</h3>
-          <p class="beskriv">Bukser | M&M</p>
-          <p class="pris"><span>FØR</span> DKK 400,-</p>
-          <div class="tilbud">
-            <p>NU DKK 240,-</p>
-            <p>-40%</p>
-          </div>
-          <a href="produkt.html">Læs mere</a>
-        </article>
-        <article class="prodcard udsolgt">
-          <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="Jogging Bukser i Polyester" />
-          <h3>Jogging Bukser i Polyester</h3>
-          <p class="beskriv">Bukser | M&M</p>
-          <p class="pris vis"><span>FØR</span> DKK 400,-</p>
-          <div class="tilbud salg">
-            <p>NU DKK 240,-</p>
-            <p>-40%</p>
-          </div>
-          <a href="produkt.html">Læs mere</a>
-        </article>
-      </div>
+      </template>
     </main>
     <footer></footer>
+    <script src="produktliste.js"></script>
   </body>
 </html>

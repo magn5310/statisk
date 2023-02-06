@@ -20,6 +20,9 @@ header * {
 header a {
   font-size: 0.8rem;
 }
+.readmore {
+  display: block;
+}
 
 .catcard {
   max-width: 100%;
@@ -64,17 +67,20 @@ article :last-child {
   margin-bottom: auto;
 }
 
-.tilbud,
+.tilbud div,
+.salg,
 span {
   display: none;
 }
 
-.salg {
-  display: flex;
-  justify-content: space-between;
-}
-
-.vis {
+.vis,
+.prodbrand,
+.prodstyle,
+.prodpris,
+.tilbud .pris,
+.realpris,
+.proddiscount,
+.nupris {
   display: inline;
 }
 
@@ -125,8 +131,10 @@ dd {
 .catchphrase h2 {
   color: crimson;
 }
-.tilbud {
+article.tilbud .salg {
   background-color: yellow;
+  display: flex;
+  justify-content: space-between;
 }
 @media (min-width: 600px) {
   .inspectcard {
