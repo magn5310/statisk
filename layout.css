@@ -12,7 +12,7 @@ ul {
 
 .catgrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 5rem;
   gap: 1rem;
 }
@@ -36,6 +36,9 @@ ul {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 5rem;
     place-items: center;
-    gap: 0.7rem;
+    gap: 3rem;
+  }
+  .catgrid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

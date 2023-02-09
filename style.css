@@ -31,7 +31,7 @@ header a {
   margin-inline: 0.2rem;
   border-radius: 1rem;
   background-color: lightgray;
-  padding: 2rem;
+  padding: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -58,7 +58,7 @@ h1 {
 .prodcard {
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
+  background-color: rgba(211, 211, 211, 0.199);
   padding: 0.4rem;
   font-size: 0.7rem;
   margin-bottom: 2rem;
@@ -101,6 +101,7 @@ span {
 }
 .logo h1 {
   font-size: 3rem;
+  font-style: italic;
 }
 .prodbeskrivelse {
   margin-block: auto;

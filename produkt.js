@@ -1,8 +1,12 @@
 //https://kea-alt-del.dk/t7/api/products/1529
 console.log("produkt.js");
 
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+const url = `https://kea-alt-del.dk/t7/api/products/${id}`;
+
 async function hentProdukt() {
-  const response = await fetch("https://kea-alt-del.dk/t7/api/products/1529");
+  const response = await fetch(url);
   const data = await response.json();
   console.log(data);
   visProdukt(data);
